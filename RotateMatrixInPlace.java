@@ -6,6 +6,8 @@ public class RotateMatrixInPlace {
 		if (mat.length == 0 || mat.length != mat[0].length)
 			return;
 		// Consider all squares one by one
+		//For a 4*4 matrix, we need to run the outerloop loop 4/2=2 times
+		//..for each layer
 		for (int x = 0; x < N / 2; x++) {
 			// Consider elements in group of 4 in
 			// current square
